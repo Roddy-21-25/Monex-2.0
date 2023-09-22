@@ -1,0 +1,93 @@
+.bg {
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      #002100
+    ),
+    url("./Assets/Header/BG/3201383.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  border-radius: 20px;
+}
+
+.sub-title {
+  color: rgba(240, 248, 255, 0.737);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  margin: 20px;
+  margin-top: 40px;
+}
+
+.main-title {
+  color: aliceblue;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 20px;
+  font-size: 60px;
+  line-height: 1.1;
+}
+
+.main-p {
+  color: aliceblue;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 20px;
+  line-height: 1.4;
+  font-weight: 400;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.main-btn {
+  border: 3px solid aliceblue;
+  background: none;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px;
+  color: aliceblue;
+  font-weight: 500;
+  box-shadow: 0px 0px 6px #004700;
+  transition: all 0.3s ease;
+}
+
+.main-btn:hover {
+  background-color: aliceblue;
+  color: #004700;
+  box-shadow: 0px 0px 6px aliceblue;
+}
+
+.img-header{
+    width: auto;
+    height: 350px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+/* Consulta de medios para pantallas de tabletas */
+@media (max-width: 768px) {
+    .img-header {
+      max-height: 350px; /* Ajusta la altura máxima para tabletas */
+    }
+  }
+  
+  /* Consulta de medios para pantallas de dispositivos móviles */
+  @media (max-width: 576px) {
+    .img-header {
+      max-height: 280px; /* Ajusta la altura máxima para dispositivos móviles */
+      margin: 10px; /* Cambia el margen para dispositivos móviles */
+    }
+  }  
+  
+  
+.title-presentation{
+    color: #002100;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 700;
+}
+  
+  
+  

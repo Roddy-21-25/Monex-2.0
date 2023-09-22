@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./center-styles.css" />
+    <link rel="stylesheet" href="./header.css" />
+    <link rel="stylesheet" href="./navbar.css" />
+    <link rel="stylesheet" href="/midOne.css" />
+    <link rel="stylesheet" href="/midTwo.css" />
+    <link rel="stylesheet" href="/midThree.css" />
+    <link rel="stylesheet" href="/Download.css" />
+    <link rel="stylesheet" href="/A&Q.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Monex</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <section class="Header mt-3 mb-5">
+      <!-- NavBar -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid justify-content-center">
+          <div class="">
+            <ol class="breadcrumb">
+              <li class="">
+                <a class="endpoint-home" href="#">Home</a>
+              </li>
+              <li class="">
+                <a class="endpoint" href="#">About</a>
+              </li>
+              <li class="" aria-current="page">
+                <a class="endpoint" href="#">Wallet</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </nav>
+      <div class="container mt-4">
+        <div class="row">
+          <div>
+            <div class="bg p-1">
+              <div class="row">
+                <div class="col-sm-5">
+                  <h5 class="sub-title">BEST APPLICATION</h5>
+                  <h1 class="main-title">Make It Simple With Our Mobile App</h1>
+                  <p class="main-p">
+                    Effortless Currency Exchange: Convert US Dollars to Various
+                    Currencies with Ease.
+                  </p>
+                </div>
+                <div class="col-sm-5 d-flex justify-content-center">
+                  <img
+                    class="img-header"
+                    src="/Assets/Header/3D/Vault-min.png"
+                    alt=""
+                  />
+                </div>
+                <div class="col-sm-2">
+                  <button class="main-btn">Explore</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <h1 class="text-center mt-5 title-presentation">
+              "Your Ultimate Money Exchange Companion"
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Alert -->
+    <div class="container">
+      <div class="row p-3">
+        <div class="alert alert-success" role="alert">
+          <h5>How Does Monex's Basic Plan Work?</h5>
+          <br />
+          <p class="alert-text-monex">
+            In <strong>Monex</strong> you could convert any amount of a selected
+            currency into other one currency. <br /><br />
+            <strong>[Example] = 1 USD to DOP?</strong> or
+            <strong>EUR? or MXN?</strong> Choose the currency that you want...
+            and you will get <strong>1 USD</strong> in this Currency, on this
+            moment, <strong><em>1 USD is 56.55 DOP.</em></strong>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exchange Section -->
+    <div class="">
+      <div class="container">
+        <div class="row p-3 full-box m-2">
+          <p class="label-title m-2">💵 Amount To Convert 💵</p>
+          <div class="alert alert-danger" role="alert" id="elemento"  style="display: none;">
+            The amount is Empty...
+          </div>
+          <div class="form-outline">
+            <input
+              type="text"
+              id="form8Example1"
+              class="form-control m-1"
+              placeholder="Amount To Convert..."
+            />
+          </div>
+          <hr class="mt-3" />
+          <div class="col">
+            <p class="label-title m-2">
+              🪙 Main Currency 🪙 <br /><br />
+              « Click to see all the list »
+            </p>
+            <select
+              id="opciones-main"
+              class="form-control m-1"
+              name="opciones-main"
+            >
+              <option value="USD">USD: United States Dollar</option>
+              <option value="DOP">DOP: Dominican Peso</option>
+              <option value="EUR">EUR: Euro</option>
+              <option value="JPY">JPY: Japanese Yen</option>
+              <option value="GBP">GBP: British Pound Sterling</option>
+              <option value="AUD">AUD: Australian Dollar</option>
+              <option value="CAD">CAD: Canadian Dollar</option>
+              <option value="CHF">CHF: Swiss Franc</option>
+              <option value="CNY">CNY: Chinese Yuan</option>
+              <option value="SEK">SEK: Swedish Krona</option>
+              <option value="NZD">NZD: New Zealand Dollar</option>
+              <option value="MXN">MXN: Mexican Peso</option>
+              <option value="SGD">SGD: Singapore Dollar</option>
+              <option value="HKD">HKD: Hong Kong Dollar</option>
+              <option value="NOK">NOK: Norwegian Krone</option>
+              <option value="KRW">KRW: South Korean Won</option>
+              <option value="TRY">TRY: Turkish Lira</option>
+              <option value="INR">INR: Indian Rupee</option>
+              <option value="RUB">RUB: Russian Ruble</option>
+              <option value="ZAR">ZAR: South African Rand</option>
+              <option value="BRL">BRL: Brazilian Real</option>
+            </select>
+          </div>
+          <div class="col">
+            <p class="label-title m-2">
+              🪙 Currency To Convert 🪙 <br /><br />
+              « Click to see all the list »
+            </p>
+            <select
+              id="opciones-Convert"
+              class="form-control m-1"
+              name="opciones-Convert"
+            >
+              <option value="USD">USD: United States Dollar</option>
+              <option value="DOP">DOP: Dominican Peso</option>
+              <option value="EUR">EUR: Euro</option>
+              <option value="JPY">JPY: Japanese Yen</option>
+              <option value="GBP">GBP: British Pound Sterling</option>
+              <option value="AUD">AUD: Australian Dollar</option>
+              <option value="CAD">CAD: Canadian Dollar</option>
+              <option value="CHF">CHF: Swiss Franc</option>
+              <option value="CNY">CNY: Chinese Yuan</option>
+              <option value="SEK">SEK: Swedish Krona</option>
+              <option value="NZD">NZD: New Zealand Dollar</option>
+              <option value="MXN">MXN: Mexican Peso</option>
+              <option value="SGD">SGD: Singapore Dollar</option>
+              <option value="HKD">HKD: Hong Kong Dollar</option>
+              <option value="NOK">NOK: Norwegian Krone</option>
+              <option value="KRW">KRW: South Korean Won</option>
+              <option value="TRY">TRY: Turkish Lira</option>
+              <option value="INR">INR: Indian Rupee</option>
+              <option value="RUB">RUB: Russian Ruble</option>
+              <option value="ZAR">ZAR: South African Rand</option>
+              <option value="BRL">BRL: Brazilian Real</option>
+            </select>
+          </div>
+          <div class="d-grid gap-2 m-1 mt-3">
+            <button class="about-btn" onclick="convertir()" type="button">
+              Convert
+            </button>
+          </div>
+          <hr class="mt-3" />
+          <div class="currency_box">
+            <div class="result-final" id="currency_result"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mid 1 -->
+    <section class="midOne">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1 class="text-center mt-3 mb-3">
+              Discover our Awesome Features Of Our New App
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid card-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="box-card">
+                <div class="svg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-sort-up-alt"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.5 13.5a.5.5 0 0 1-1 0V4.707L1.354 5.854a.5.5 0 1 1-.708-.708l2-1.999.007-.007a.498.498 0 0 1 .7.006l2 2a.5.5 0 1 1-.707.708L3.5 4.707V13.5zm4-9.5a.5.5 0 0 1 0-1h1a.5.5 0 0 1 0 1h-1zm0 3a.5.5 0 0 1 0-1h3a.5.5 0 0 1 0 1h-3zm0 3a.5.5 0 0 1 0-1h5a.5.5 0 0 1 0 1h-5zM7 12.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5z"
+                    />
+                  </svg>
+                </div>
+                <div class="h2">Organize</div>
+                <p>
+                  Organize your schedule and set reminders for important events
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="box-card">
+                <div class="svg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-bookmark-plus-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zm6.5-11a.5.5 0 0 0-1 0V6H6a.5.5 0 0 0 0 1h1.5v1.5a.5.5 0 0 0 1 0V7H10a.5.5 0 0 0 0-1H8.5V4.5z"
+                    />
+                  </svg>
+                </div>
+                <div class="h2">Track</div>
+                <p>Keep track of your expenses and budget more effectively</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="box-card">
+                <div class="svg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-globe"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"
+                    />
+                  </svg>
+                </div>
+                <div class="h2">Connect</div>
+                <p>Connect with friends and family seamlessly</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mid 2 -->
+    <section class="midTwo">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3 d-flex justify-content-center">
+            <img class="about-img" src="./Assets/Mid 2/Mid-2-min.png" alt="" />
+          </div>
+          <div class="col-sm-9">
+            <div class="about-box">
+              <h5 class="about">ABOUT US</h5>
+              <h1 class="about-title">We Do Things Differently</h1>
+              <p class="about-p">
+                Our app is user-friendly and easy to navigate, so you can start
+                using it right away. Plus, it's available on both iOS and
+                Android devices, so you can download it no matter what kind of
+                phone you have.
+              </p>
+              <button class="about-btn">About Us</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- Mid 3 -->
+    <section class="midThree">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-7">
+            <div class="other-box">
+              <h5 class="about">SERVICE</h5>
+              <h1 class="about-title">Share With Your Friends</h1>
+              <p class="about-p">
+                Don't waste time sending files and photos one by one. Download
+                our app now and start sharing your memories with ease!
+              </p>
+              <ul>
+                <ol class="service-item">
+                  ✅ Email Marketing
+                </ol>
+                <ol class="service-item">
+                  ✅ Mobile Optimization
+                </ol>
+                <ol class="service-item">
+                  ✅ Time Deliverable
+                </ol>
+              </ul>
+              <button class="about-btn">Learn More</button>
+            </div>
+          </div>
+          <div class="col-sm-5 d-flex justify-content-center">
+            <img class="about-img" src="./Assets/Mid 3/a.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DownLoad -->
+    <section class="download">
+      <div class="container">
+        <div class="row text-center p-3">
+          <div class="bg-download">
+            <h4 class="sub-title-download">DOWNLOAD NOW</h4>
+            <h1 class="title-download">Download Our App Right Now</h1>
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn-explore">Explore</button>
+              <button type="button" class="btn-get-app">Get App</button>
+            </div>
+            <h6 class="sub-title-download">Available on all Devices</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-center">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Form -->
+        <section class="">
+          <form action="">
+            <!--Grid row-->
+            <div class="row d-flex justify-content-center">
+              <!--Grid column-->
+              <div class="col-auto">
+                <p class="pt-2">
+                  <strong>Sign up for our newsletter</strong>
+                </p>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-5 col-12">
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                  <input
+                    type="email"
+                    placeholder="write your best email..."
+                    id="form5Example27"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-auto">
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-success mb-4">
+                  Subscribe
+                </button>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </form>
+        </section>
+        <!-- Section: Form -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center bg-footer p-3">
+        <p class="text-footer">
+          © 2020 Copyright:
+          <br />
+          Hi 👋 Im <strong>Roddy :)</strong>, The developer of Monex. Here is my
+          Social Media Info and Others Projects. This Web was build with :
+          <strong>HTML | BOOTSTRAP | CSS | JS</strong> and This is API:
+          <strong>https://api-ninjas.com/api/convertcurrency</strong>
+        </p>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

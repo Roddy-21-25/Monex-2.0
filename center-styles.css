@@ -1,0 +1,13 @@
+.label-title{
+    font-weight: 700;
+}
+
+.full-box{
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.202);
+}
+
+.result-final{
+    font-weight: 600;
+}
